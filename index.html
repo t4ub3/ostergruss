@@ -12,8 +12,46 @@
   </head>
   <body>
     <main>
+      <div id="egg-alert" class="egg-alert">
+        <span id="egg-alert-egg"><i class="fas fa-egg"></i>&nbsp;+1</span>
+        <span class="egg-alert-title">Glückwunsch!</span>
+        <div id="egg-alert-text" class="egg-alert-text"></div>
+        <div class="egg-alert-footer">
+          <button id="egg-alert-close" class="egg-alert-close" type="button">
+            <i class="fas fa-times"></i>&nbsp;&nbsp;Schließen
+          </button>
+        </div>
+      </div>
+      <div id="egg-list" class="egg-list">
+        <span
+          ><i class="fas fa-egg"></i>&nbsp;<span id="egg-list-count"
+            >0</span
+          ></span
+        >
+        <div class="egg-list-text">
+          Schickt uns bis Ostermontag abends eine Liste mit euren gefundenen
+          Easter Eggs. Wer am schnellsten die meisten gefunden hat, gewinnt
+          einen kleinen Preis :)
+        </div>
+        <ul class="egg-list-texts" id="egg-list-texts"></ul>
+        <div class="egg-list-footer">
+          <button id="egg-list-close" class="egg-list-close" type="button">
+            <i class="fas fa-times"></i>&nbsp;&nbsp;Schließen
+          </button>
+        </div>
+      </div>
       <h1>Easter Egg</h1>
-      <small>Quelle: Wikipedia (https://de.wikipedia.org/wiki/Easter_Egg)</small>
+      <form id="search" class="search">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Auf Wikipedia suchen ..."
+        />
+        <button type="submit">Suchen</button>
+      </form>
+      <small
+        >Quelle: Wikipedia (https://de.wikipedia.org/wiki/Easter_Egg)</small
+      >
       <p>
         <strong>Easter Egg</strong> (engl. für „Osterei“) ist eine Bezeichnung
         für eine versteckte Besonderheit in Medien und Computerprogrammen.
@@ -42,8 +80,18 @@
         nicht offiziell aufscheint – ansehen, weniger als Plagiatsfalle.
       </p>
       <h2>Verwendung</h2>
-      <img class="egg-img" src="egg_small.jpg" alt="Ei" />
       <h3>Software</h3>
+      <div class="egg-img-wrapper" id="egg-img-wrapper">
+        <div id="egg-drop" class="egg-drop"></div>
+        <img class="egg-img-right" src="egg_small_right.jpg" alt="Ei rechts" />
+        <img
+          id="egg-img"
+          draggable="true"
+          class="egg-img-left"
+          src="egg_small_left.jpg"
+          alt="Ei links"
+        />
+      </div>
       <p>
         Bei Software lassen sich diese versteckten Funktionen mit
         Tastenkombinationen auf Tastatur oder Maus aktivieren. Beispielsweise
@@ -102,7 +150,7 @@
         jeweilige (reale) Name leicht verändert verwendet wird. Ebenfalls üblich
         sind Insiderwitze wie z. B. der Code A113, die vom normalen Publikum
         kaum entdeckt werden können und damit der ursprünglichen Funktion der
-        Easter Eggs am ehesten entsprechen. Meist sind Easter Eggs so gut
+        Easter Egggs am ehesten entsprechen. Meist sind Easter Eggs so gut
         versteckt und ihre Darstellungsdauer so kurz, dass sie erst nach dem
         mehrmaligen, aufmerksamen und gezielten Ansehen des Films bewusst
         erkannt werden können. Ein gutes Beispiel ist der Animationsfilm
