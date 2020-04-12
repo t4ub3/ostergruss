@@ -61,6 +61,7 @@ a {
   display: none;
   position: fixed;
   width: 400px;
+  max-width: 100%;
   margin: 0 auto;
   background: #88a0a8;
   color: #546a76;

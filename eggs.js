@@ -24,8 +24,11 @@ window.addEventListener("scroll", () => {
 });
 
 // --- RESIZE
+let initialWidth = document.body.clientWidth;
 window.addEventListener("resize", () => {
-  findEgg("resize");
+  if (document.body.clientWidth !== initialWidth) {
+    findEgg("resize");
+  }
 });
 
 // --- IMAGE

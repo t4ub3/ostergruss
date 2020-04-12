@@ -46,7 +46,7 @@ let eggs = {
 };
 
 let intro =
-  "Du hast es vielleicht schon geahnt... auch auf dieser Seite gibt es 10 Easter Eggs :) Du hast gerade eins gefunden. Wenn du unten rechts auf das Ei klickst, siehst du, welche du schon gefunden hast. Viel Spaß!<br><br>";
+  "Du hast es vielleicht schon geahnt... auch auf dieser Seite gibt es Easter Eggs :) Du hast gerade das erste von 10 gefunden. Wenn du unten rechts auf das Ei klickst, siehst du, welche du schon gefunden hast. Viel Spaß!<br>(Für alle, die Quellcode lesen können: bitte nicht schummeln!!)<br><br>";
 let counter = 0;
 let countDisplay = document.getElementById("count");
 let countWrapper = document.getElementById("count-wrapper");
